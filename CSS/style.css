@@ -1,10 +1,11 @@
 body {
     font-family: Robot, sans-serif;
+    font-size: 0.8em;
+    line-height: 1.1;
 }
 header {
     background-color: cadetblue;
-    position: fixed;
-    top: 0%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -20,10 +21,18 @@ h1 {
     color: lightgray;
     font-style: italic;
     font-size: 1.6em;
+    text-shadow: 1px 1px 30px black;
+}
+
+section {
+    padding: 20px;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
 }
 footer {
-    position: fixed;
-    bottom: 0%;
     width: 100%;
     background-color: cadetblue;
     display: flex;
@@ -33,6 +42,7 @@ footer p {
     color: lightgray;
     font-size: 0.75em;
     margin: 10px auto;
+    text-shadow: 1px 1px 4px black;
 }
 footer a {
     text-decoration: none;
@@ -48,11 +58,10 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width : 600px) {
+@media screen and (min-width : 500px) {
 
     header {
         height: 200px;
-        width: 100%;
     }
     header img {
         width: auto;
@@ -64,6 +73,16 @@ footer a:hover {
         font-style: italic;
         font-size: 2em;
         margin-left: 7%;
+    }
+
+}
+
+@media screen and (min-width : 700px) {
+
+    .central_page {
+        width: 700px;
+        margin: 0 auto;
+        border: 2px solid cadetblue;
     }
 
 }
