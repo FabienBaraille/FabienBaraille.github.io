@@ -8,6 +8,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 header img {
     max-width: 30%;
@@ -25,7 +26,7 @@ h1 {
 }
 
 section {
-    padding: 20px;
+    padding: 5px 20px;
 }
 h2 {
     font-size: 1.2em;
@@ -39,9 +40,16 @@ h2 {
     margin-left: 15px;
     margin-bottom: 20px;
 }
+h2.experience {
+    margin-left: unset;
+}
+.suite p {
+    margin-left: 27px;
+}
 ul {
     list-style-type: circle;
     line-height: 1.1;
+    margin-left: -1em;
 }
 .formation li {
     margin-bottom: 20px;
