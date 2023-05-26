@@ -47,9 +47,11 @@ ul {
     margin-bottom: 20px;
 }
 li strong {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
-    text-decoration: underline;
+}
+li p {
+    margin-top: 10px;
 }
 a {
     text-decoration: none;
