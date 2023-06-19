@@ -15,8 +15,9 @@ header {
     height: auto;
     border: 2px solid #BBB1B1;
     box-shadow: 0 0 10px #BBB1B1;
-    border-radius: 30%;
-    margin: 10px;
+    border-radius: 50%;
+    margin: 15px;
+    rotate: -7deg;
 }
 h1 {
     color: #345246;
@@ -72,7 +73,7 @@ li strong {
     font-size: 1em;
     font-weight: bold;
 }
-li p {
+footer p, li p {
     margin-top: 10px;
 }
 a {
