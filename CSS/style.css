@@ -10,8 +10,8 @@ header {
     flex-direction: column;
     margin-bottom: 15px;
 }
-header img {
-    max-width: 25%;
+.identity {
+    max-width: 20%;
     height: auto;
     border: 2px solid #BBB1B1;
     box-shadow: 0 0 10px #BBB1B1;
@@ -30,6 +30,14 @@ header div {
 }
 .contact {
     flex-wrap: wrap;
+}
+.contact p {
+    margin: 0 5px;
+}
+.contact img {
+    margin: 0 5px 10px;
+    width: 20px;
+    height: auto;
 }
 section {
     padding: 5px 20px;
@@ -91,55 +99,50 @@ footer {
     display: flex;
     justify-content: center;
 }
-footer p {
+header p {
     color: #BBB1B1;
-    font-size: 0.75em;
-    margin: 10px auto;
     text-shadow: 1px 1px 4px black;
 }
-footer a {
+header a {
     text-decoration: none;
     color: #BBB1B1;
     transition: 2s;
 }
-footer a:hover {
+header a:hover {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
 }
 
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width : 500px) {
-
-    header img {
-        width: auto;
-        height: 125px;
-        margin-left: 15px;
-    }
-    h1 {
-        visibility: hidden;
-    }
-    header {
-        background-image: url('../images/1686625574310.jpg');
-        background-size: cover;
-        height: 170px;
-    }
-
-}
-
-@media screen and (min-width : 700px) {
+@media screen and (min-width : 800px) {
 
     .central_page {
-        width: 700px;
+        width: 800px;
         margin: 0 auto;
         border: 2px solid #6A9D89;
         border-radius: 50px 0 35px;
         overflow: hidden;
     }
-
+    .identity {
+        margin-left: 15px;
+        max-width: 25%;
+    }
     h1 {
         font-size: 2.5em;
+    }
+    header {
+        height: 170px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header div:first-child {
+        width: 60%;
+    }
+    .contact {
+        width: 30%;
+        line-height: 1em;
+        font-size: 0.8em;
     }
 }
