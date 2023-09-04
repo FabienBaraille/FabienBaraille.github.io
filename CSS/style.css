@@ -10,7 +10,7 @@ header {
     flex-direction: column;
     margin-bottom: 15px;
 }
-.identity {
+/* .identity {
     max-width: 20%;
     height: auto;
     border: 2px solid #BBB1B1;
@@ -18,7 +18,7 @@ header {
     border-radius: 50%;
     margin: 15px;
     rotate: -7deg;
-}
+} */
 h1 {
     color: #345246;
     font-style: italic;

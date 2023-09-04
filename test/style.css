@@ -1,0 +1,61 @@
+
+.border {
+  height: 290px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+    border: 1px solid white;
+}
+.card {
+  height: 300px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: center center no-repeat url('../images/profil.jpg');
+  background-size: 300px;
+}
+.card0:hover {
+    background: url('../images/profil.jpg') left center no-repeat;
+    background-size: 450px;
+    opacity: 1;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 20px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.fa {
+    opacity: 1;
+    transition: opacity 1s;
+}
+  
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
