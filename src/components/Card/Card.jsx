@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <div className="card card0">
       <div className="border">
-        <h2>Fabien Baraille</h2>
+        <h3>Fabien Baraille</h3>
         <ul className="icons">
           <li className="fa" aria-hidden="true">
             41 ans

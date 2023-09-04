@@ -1,0 +1,14 @@
+@use '/src/styles/variables' as v;
+
+.test {
+    background-color: v.$principal;
+    margin-bottom: 30px;
+    h1 {
+        font-size: 2.6em;
+        padding: 20px 0;
+    }
+    h2 {
+        font-size: 2.3em;
+        padding-bottom: 20px;
+    }
+}
