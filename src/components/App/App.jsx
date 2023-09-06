@@ -26,12 +26,7 @@ function App() {
             <About />
           </>
         )}
-        {page === 'loading' && (
-          <>
-            <Card />
-            <InProgress />
-          </>
-        )}
+        {page === 'loading' && <InProgress />}
         {page === 'formation' && <Formation />}
       </Container>
       <Footer />

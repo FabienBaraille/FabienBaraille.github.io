@@ -1,3 +1,5 @@
+/* eslint-disable react/require-default-props */
+/* eslint-disable react/forbid-prop-types */
 import './Container.scss';
 import PropTypes from 'prop-types';
 
@@ -6,7 +8,7 @@ const Container = ({ children }) => {
 };
 
 Container.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.array,
 };
 
 export default Container;
