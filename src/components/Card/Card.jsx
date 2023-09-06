@@ -15,9 +15,6 @@ const Card = () => {
           <li className="fa" aria-hidden="true">
             Permis B
           </li>
-          <li className="fa" aria-hidden="true">
-            More...
-          </li>
         </ul>
       </div>
     </div>
