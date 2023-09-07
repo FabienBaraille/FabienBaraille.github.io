@@ -4,11 +4,13 @@
   width: 150px;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(180deg, v.$second 0%, v.$principal 100%);
+  background: linear-gradient(180deg, v.$second 0%, v.$principal 100%);
   position: absolute;
   height: 100%;
   .logo {
     height: 90px;
+    background: center / contain no-repeat url('/src/assets/images/FB.png'),
+                v.$second;
   }
   button {
     padding: 15px;

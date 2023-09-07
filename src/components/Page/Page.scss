@@ -3,7 +3,8 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  overflow: scroll;
+  overflow-y: auto;
+  position: relative;
 }
 
 @media screen and (max-width : 900px) {

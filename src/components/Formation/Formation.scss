@@ -3,6 +3,8 @@
 .formation {
   display: flex;
   justify-content: space-around;
+  position: absolute;
+  top: 20px;
   section {
     width: 45%;
     h2 {
