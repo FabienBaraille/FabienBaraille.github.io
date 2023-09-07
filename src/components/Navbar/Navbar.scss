@@ -1,23 +1,28 @@
 @use '/src/styles/variables' as v;
 
 .nav {
-  width: 100%;
+  width: 150px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  background-image: linear-gradient(180deg, v.$second 0%, v.$principal 100%);
+  position: absolute;
+  height: 100%;
+  .logo {
+    height: 90px;
+  }
   button {
-    width: calc(100% / 3);
     padding: 15px;
     color: white;
     font-family: 'Mochiy Pop One';
     font-size: 0.9em;
     border: none;
-    background: linear-gradient(180deg, v.$principal, v.$second);
+    background: transparent;
     &:hover {
-      box-shadow: inset -3px -20px 20px -18px v.$clear;
+      box-shadow: inset 0 0 12px 5px v.$clear;
     }
     &.selected {
-      color: black;
-      box-shadow: inset -3px -20px 20px -18px v.$clear;
+      color: v.$principal;
+      box-shadow: inset 0 0 12px 5px v.$clear;
     }
   }
 }

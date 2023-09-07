@@ -1,11 +1,12 @@
 @use '/src/styles/variables' as v;
-.container {
+.contain {
     margin: 60px;
     position: relative;
 }
 .loader {
     position: absolute;
-    margin: 1em auto;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
     border: 1px solid #f3f3f3;
     border-top: 5px solid v.$principal;
     border-radius: 50%;

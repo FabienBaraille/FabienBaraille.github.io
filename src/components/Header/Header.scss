@@ -1,27 +1,16 @@
 @use '/src/styles/variables' as v;
 
-.test {
-    background: linear-gradient(0deg, v.$principal, v.$second);
+.head {
+    background:  v.$second;
     font-family: 'Mochiy Pop One';
     color: white;
+    height: 90px;
     h1 {
-        font-size: 2.6em;
-        padding: 20px 0;
-        line-height: 1.2em;
+        font-size: 1.6em;
+        padding: 10px 0;
     }
     h2 {
-        font-size: 2.3em;
+        font-size: 1.1em;
         padding-bottom: 20px;
     }
 }
-
-@media screen and (max-width : 600px) {
-    .test {
-        h1 {
-            font-size: 2em;
-        }
-        h2 {
-            font-size: 1.6em;
-        }
-    }
-  }

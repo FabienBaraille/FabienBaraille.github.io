@@ -13,6 +13,7 @@
 		"lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix"
 	},
 	"dependencies": {
+		"@mui/icons-material": "^5.14.8",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-feather": "^2.0.10"

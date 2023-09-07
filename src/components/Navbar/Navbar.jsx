@@ -6,6 +6,7 @@ import './Navbar.scss';
 const Navbar = ({ page, setPage }) => {
   return (
     <div className="nav">
+      <div className="logo">Logo</div>
       <button
         onClick={() => setPage('home')}
         type="button"

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background: linear-gradient(180deg, v.$principal, v.$second);
+    background: v.$principal;
     color: white;
     p {
         margin: 0 5px;
@@ -16,9 +16,4 @@
             margin-left: 10px;
         }
     }
-    /* img {
-        margin: 0 5px 10px;
-        width: 20px;
-        height: auto;
-    } */
 }
