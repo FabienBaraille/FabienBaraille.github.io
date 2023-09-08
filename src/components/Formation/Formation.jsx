@@ -6,7 +6,7 @@ const Formation = () => {
     <div className="formation">
       <section>
         <h2>Toutes mes formations...</h2>
-        <dropdown>
+        <div className="dropdown">
           <input id="toggle1" type="checkbox" />
           <label htmlFor="toggle1" className="animate">
             1998-2001 - Lycée la pleïade - Pont de Cheruy (38)
@@ -19,8 +19,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle2" type="checkbox" />
           <label htmlFor="toggle2" className="animate">
             2001-2004 - IUT A - Lyon I (69)
@@ -35,8 +35,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle3" type="checkbox" />
           <label htmlFor="toggle3" className="animate">
             2004-2005 - IUT A - Lyon I (69)
@@ -51,8 +51,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle4" type="checkbox" />
           <label htmlFor="toggle4" className="animate">
             2023 - O'Clock - Distanciel (01)
@@ -67,11 +67,11 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
+        </div>
       </section>
       <section>
         <h2>Avant la vie active il y a les jobs d'été...</h2>
-        <dropdown>
+        <div className="dropdown">
           <input id="toggle5" type="checkbox" />
           <label htmlFor="toggle5" className="animate">
             1999 et 2000 - Aide plaquiste - SARL Sandoz Tignieu-Jameyzieu (38)
@@ -86,8 +86,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle6" type="checkbox" />
           <label htmlFor="toggle6" className="animate">
             2001 et 2002 - Aide Chromeur - Chromalpes Meyzieu (69)
@@ -101,9 +101,9 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
+        </div>
         <h2 className="experience">...l'entrée dans la vie active...</h2>
-        <dropdown>
+        <div className="dropdown">
           <input id="toggle7" type="checkbox" />
           <label htmlFor="toggle7" className="animate">
             2006/2007 - Technicien hotliner - SARL Robobat Montbonnot (38)
@@ -121,8 +121,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle8" type="checkbox" />
           <label htmlFor="toggle8" className="animate">
             2008/2018 - Co-gérant - SARL BE Baraille Tignieu-Jameyzieu (38)
@@ -148,8 +148,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle9" type="checkbox" />
           <label htmlFor="toggle9" className="animate">
             2018/2019 - Dessinateur/Préparateur - Lenoir Metallerie Villeurbanne
@@ -177,8 +177,8 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
-        <dropdown>
+        </div>
+        <div className="dropdown">
           <input id="toggle10" type="checkbox" />
           <label htmlFor="toggle10" className="animate">
             2019 à Aujourd'hui - Projeteur/Responsable - EDPF groupe Pharea
@@ -203,7 +203,7 @@ const Formation = () => {
               <i className="fa fa-code float-right" />
             </li>
           </ul>
-        </dropdown>
+        </div>
       </section>
     </div>
   );

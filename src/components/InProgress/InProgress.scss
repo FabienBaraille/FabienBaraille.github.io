@@ -1,8 +1,9 @@
+@use '/src/styles/variables' as v;
+
 .load {
-    width: 90%;
     margin: 50px;
     h4 {
-        font-size: 2em;
+        font-size: v.$highSize;
         margin-bottom: 30px;
     }
     p {
@@ -13,7 +14,7 @@
     .load {
         margin-top: 20px;
         h4 {
-            font-size: 2em;
+            font-size: v.$titleSize;
             margin-bottom: 30px;
         }
         p {

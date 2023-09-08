@@ -4,13 +4,27 @@
     background:  v.$second;
     font-family: 'Mochiy Pop One';
     color: white;
-    padding: 3.4px 0;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 0;
     h1 {
-        font-size: 1.6em;
-        padding: 10px 0;
+        font-size: v.$titleSize;
+        margin-bottom: 0;
     }
     h2 {
-        font-size: 1.1em;
-        padding-bottom: 20px;
+        font-size: v.$subSize;
     }
 }
+
+@media screen and (max-width : 900px) {
+    .head {
+        h1 {
+            font-size: v.$subSize;
+        }
+        h2 {
+            font-size: v.$littleSize;
+        }
+    }
+  }

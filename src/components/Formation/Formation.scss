@@ -9,7 +9,7 @@
     width: 45%;
     h2 {
       font-family: 'Mochiy Pop One';
-      font-size: 1.2em;
+      font-size: v.$subSize;
       margin: 15px;
     }
   }
@@ -19,64 +19,60 @@
   float: right;
 }
 .fa{
- font-size: .8em;
+ font-size: v.$littleSize;
   line-height: 22px !important;
 }
-dropdown{
+.dropdown{
   width: 100%;
   display: inline-block;
+  label {
+    font-size: v.$normalSize;
+    background: #ECF0F1;
+    color: v.$principal;
+    border-left: 4px solid v.$principal;
+    border-radius: 0 5px 0 0; 
+    position: relative;
+    z-index: 2;
+    &:hover {
+      background: v.$principal;
+      color: v.$clear;
+      cursor: pointer;
+    }
+  }
+  ul li {
+    display: block;
+    background: white;
+    padding: 15px 15px;
+    text-align: justify;
+  }
+  label, ul li {
+    display: block;
+    padding: 15px 15px;
+    text-align: justify;
+  }
+  input {
+    display: none;
+  }
+  input ~ ul{
+    position: relative;
+    top: -20px;
+    z-index: 1;
+    height: 0.5px;
+    overflow: hidden;
+    margin: 0;
+  }
+  input:checked + label{
+    background: v.$principal;
+    color: v.$clear;
+  }
+  input:checked ~ ul{
+    height: auto;
+    top: 0;
+  }
 }
-dropdown label {
-  font-size: 1.1em;
-  background: #ECF0F1;
-}
-dropdown label, dropdown ul li{
-  display: block;
-  padding: 15px 15px;
-  text-align: justify;
-}
-dropdown ul li{
-  display: block;
-  background: #ffffff;
-  padding: 15px 15px;
-  text-align: justify;
-}
-dropdown label:hover{
-  background: v.$principal;
-  color: white;
-  cursor: pointer;
-}
-dropdown label{
-  color: v.$principal;
-  border-left: 4px solid v.$principal;
-  border-radius: 0 5px 0 0; 
-  position: relative;
-  z-index: 2;
-}
-dropdown input{
-  display: none;
-}
-dropdown input ~ ul{
-  position: relative;
-  top: -20px;
-  z-index: 1;
-  height: 0.5px;
-  overflow: hidden;
-}
-dropdown input:checked + label{
-  background: v.$principal;
-  color: white;
-}
-
-dropdown input:checked ~ ul{
-  height: auto;
-  top: 0;
-}
-
 .animate{
   transition: 1s;  
 }
-
 @media screen and (max-width : 900px) {
   .formation {
       display: flex;
