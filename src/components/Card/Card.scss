@@ -49,14 +49,14 @@
   width: 300px;
   background: grey;
   border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
+  transition: background 1s;
   background: v.$principal;
   box-shadow: 0px 0px 10px v.$principal;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0 30px;
 }
 .card0 {
   background: url('../../assets/images/profil.jpg') center center no-repeat;
@@ -74,4 +74,24 @@
             color: white;
         }
     }
+}
+
+@media screen and (max-width : 900px) {
+  .card {
+    height: 200px;
+    width: 200px;
+    &:hover {
+      background-size: 300px;
+    }
+  }
+  .card0 {
+    background-size: 200px;
+  }
+  .border {
+    height: 190px;
+    width: 190px;
+  }
+  .infos{
+    top: 120px;
+  }
 }

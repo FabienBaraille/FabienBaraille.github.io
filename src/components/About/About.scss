@@ -1,9 +1,18 @@
 @use '/src/styles/variables' as v;
 
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .about {
-  width: 50%;
+  display: flex;
   text-align: justify;
-  padding: 15px;
+  padding: 30px;
+  .intro {
+    width: 60%;
+  }
   h3 {
     font-family: 'Mochiy Pop One';
     font-size: v.$titleSize;
@@ -12,8 +21,8 @@
   }
   p {
     margin-bottom: 15px;
-    font-size: v.$subSize;
-    line-height: v.$subSize;
+    font-size: v.$normalSize;
+    line-height: v.$normalSize;
   }
 }
 .list {
@@ -26,12 +35,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    margin: 0 15px;
     li {
       color: white;
       box-shadow: inset 0 0 3px v.$clear, 0 0 5px black;
       padding: 4px 7px;
-      width: 80%;
+      width: 100%;
       background: linear-gradient(180deg, v.$principal, v.$second);
       border-radius: 10px;
       margin: 5px 0;
@@ -39,8 +48,27 @@
   }
 }
 
-@media screen and (max-width : 900px) {
+@media screen and (max-width : 1200px) {
+  .wrapper {
+    position: absolute;
+    top: 20px;
+  }
   .about {
+    width: 90%;
+    flex-direction: column;
+    .list, .intro {
       width: 100%;
+    }
+    ul {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width : 900px) {
+  
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }
