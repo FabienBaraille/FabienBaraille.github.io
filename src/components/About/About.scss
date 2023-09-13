@@ -1,83 +1,108 @@
 @use '/src/styles/variables' as v;
 
 .wrapper {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.about {
-  display: flex;
-  justify-content: space-around;
-  text-align: justify;
-  padding: 30px;
-  .intro {
-    width: 60%;
+  flex-direction: column;
+  width: 90%;
+  p, li {
+    font-size: v.$normalSize;
   }
   h3 {
-    font-family: 'Abhaya Libre';
-    font-size: v.$titleSize;
-    margin: 0 0 15px 15px;
-    text-decoration: underline;
+    font-size: v.$subSize;
+    font-weight: 500;
   }
-  p {
-    margin-bottom: 15px;
-    font-size: v.$normalSize;
-    line-height: v.$normalSize;
-    text-align: justify;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.intro, .skills, .first, .list {
+  margin: 10px 0;
+}
+
+.first {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+  text-align: justify;
+  padding: 15px 25px;
+  background: v.$light-ter;
+}
+
+.skills {
+  color: v.$light-ter;
+  background: v.$principal;
+  padding: 25px;
+  ul {
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      padding: 10px;
+      height: 160px;
+    }
+  }
+  img {
+    width: 55px;
+    height: auto;
+    filter: grayscale(1);
   }
 }
 .list {
-  margin-top: 15px;
+  color: v.$light-ter;
+  background: v.$secondary;
+  padding: 25px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  text-align: center;
   ul {
-    font-size: v.$normalSize;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 15px;
-    li {
-      color: white;
-      box-shadow: inset 0 0 3px v.$light-ter, 0 0 5px black;
-      padding: 4px 7px;
-      width: 100%;
-      background: linear-gradient(180deg, v.$principal, v.$secondary);
-      border-radius: 10px;
-      margin: 5px 0;
-    }
+    width: 250px;
+  }
+  .right {
+    background: v.$light-sec;
+    width: 3px;
+    padding: 25px 0;
   }
 }
+.effect {
+  padding: 7px 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.25);
+  width: 150px;
+}
+.green {
+  background: v.$light-sec;
+  margin: 10px;
+}
+.blue {
+  background: v.$light-princ;
+}
 
-@media screen and (max-width : 1200px) {
+
+@media screen and (min-width : 900px) {
+  
   .wrapper {
     position: absolute;
     top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  .about {
-    width: 90%;
-    flex-direction: column;
-    .list, .intro {
-      width: 100%;
-    }
-    ul {
-      width: 40%;
-    }
+  .first, .third {
+    width: 30%;
   }
-}
-
-@media screen and (max-width : 900px) {
-  
-  .wrapper {
-    flex-direction: column;
-    align-items: center;
+  .second, .fourth {
+    width: 60%;
   }
-}
-
-@media screen and (max-width : 700px) {
-  .wrapper {
-      position: unset;
-      margin: 20px 0;
+  .effect {
+    width: unset;
   }
 }

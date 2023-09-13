@@ -8,7 +8,6 @@
   section {
     width: 45%;
     h2 {
-      font-family: 'Abhaya Libre';
       font-size: v.$subSize;
       margin: 15px;
     }
@@ -18,9 +17,9 @@
 .float-right{
   float: right;
 }
-.fa{
+.iframe{
  font-size: v.$smallSize;
-  line-height: 22px !important;
+  line-height: 22px;
 }
 .dropdown{
   width: 100%;

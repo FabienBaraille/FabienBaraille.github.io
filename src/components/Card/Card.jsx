@@ -2,20 +2,20 @@ import './Card.scss';
 
 const Card = () => {
   return (
-    <div className="card card0">
+    <div className="card">
       <div className="border">
         <h3>Fabien Baraille</h3>
-        <ul className="infos">
-          <li className="fa" aria-hidden="true">
+        <div className="infos">
+          <p className="fa" aria-hidden="true">
             41 ans
-          </li>
-          <li className="fa" aria-hidden="true">
+          </p>
+          <p className="fa" aria-hidden="true">
             Pacsé, 1 enfant
-          </li>
-          <li className="fa" aria-hidden="true">
+          </p>
+          <p className="fa" aria-hidden="true">
             Permis B
-          </li>
-        </ul>
+          </p>
+        </div>
       </div>
     </div>
   );
