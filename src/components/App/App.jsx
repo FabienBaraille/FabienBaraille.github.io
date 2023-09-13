@@ -14,15 +14,15 @@ import Gallery from '../Gallery/Gallery';
 function App() {
   const [page, setPage] = useState('home');
   const [isLittle, setIsLittle] = useState(false);
+  const [size, setSize] = useState(window.innerWidth);
 
-  window.onresize = function () {
-    console.log(window.innerWidth);
+  window.onresize = function resize() {
+    setSize(window.innerWidth);
   };
 
   useEffect(() => {
-    const size = window.innerWidth;
     setIsLittle(size <= 700);
-  }, []);
+  }, [size]);
 
   return (
     <div className="App">
@@ -30,7 +30,7 @@ function App() {
         <Navbar setPage={setPage} page={page} isLittle={isLittle} />
       )}
       {/* Pseudo route car la compatibilité des routeurs avec GitHub n'est pas l'idéal  */}
-      {/* Un refresh sur une page secondaire amène une erreur 404 */}
+      {/* Un refresh sur une page secondaire amènerait une erreur 404 */}
       <Container>
         <Header />
         <Page>
