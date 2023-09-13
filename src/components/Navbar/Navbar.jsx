@@ -53,10 +53,10 @@ const Navbar = ({ page, setPage, isLittle }) => {
             Formation & Expérience
           </button>
           <button
-            onClick={() => toggleMenuPage('loading')}
+            onClick={() => toggleMenuPage('projects')}
             type="button"
             className={
-              page === 'loading' ? 'btn menu-btn selected' : 'btn menu-btn'
+              page === 'projects' ? 'btn menu-btn selected' : 'btn menu-btn'
             }
           >
             Projets

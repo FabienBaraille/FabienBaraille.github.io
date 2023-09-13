@@ -10,8 +10,7 @@ J'ai encore des choses à faire dessus ainsi que des améliorations / tests à r
 
 ## Reste à faire
 
-- Page projet
-- Menu burger pour le responsive
+- Page projet (cover à faire et pokedex à mettre su github)
 
 ## A essayer
 

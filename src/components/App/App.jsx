@@ -9,10 +9,15 @@ import './App.scss';
 import Navbar from '../Navbar/Navbar';
 import Formation from '../Formation/Formation';
 import Container from '../Container/Container';
+import Gallery from '../Gallery/Gallery';
 
 function App() {
   const [page, setPage] = useState('home');
   const [isLittle, setIsLittle] = useState(false);
+
+  window.onresize = function () {
+    console.log(window.innerWidth);
+  };
 
   useEffect(() => {
     const size = window.innerWidth;
@@ -32,6 +37,7 @@ function App() {
           {page === 'home' && <About />}
           {page === 'loading' && <InProgress />}
           {page === 'formation' && <Formation />}
+          {page === 'projects' && <Gallery />}
         </Page>
         {isLittle && (
           <Navbar setPage={setPage} page={page} isLittle={isLittle} />

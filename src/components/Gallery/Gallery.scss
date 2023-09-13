@@ -1,0 +1,32 @@
+@use '/src/styles/variables' as v;
+
+.gal-wrapper {
+  position: absolute;
+  top: 20px;
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    text-align: left;
+    max-width: 70%;
+    .mini-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid v.$principal;
+      border-radius: 15px;
+      padding: 10px;
+      width: fit-content;
+      img {
+        height: 150px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width : 700px) {
+  .gal-wrapper {
+      position: unset;
+      margin: 20px 0;
+  }
+}
