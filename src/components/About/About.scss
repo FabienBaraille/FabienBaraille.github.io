@@ -15,7 +15,7 @@
     width: 60%;
   }
   h3 {
-    font-family: 'Mochiy Pop One';
+    font-family: 'Abhaya Libre';
     font-size: v.$titleSize;
     margin: 0 0 15px 15px;
     text-decoration: underline;
@@ -40,10 +40,10 @@
     margin: 0 15px;
     li {
       color: white;
-      box-shadow: inset 0 0 3px v.$clear, 0 0 5px black;
+      box-shadow: inset 0 0 3px v.$light-ter, 0 0 5px black;
       padding: 4px 7px;
       width: 100%;
-      background: linear-gradient(180deg, v.$principal, v.$second);
+      background: linear-gradient(180deg, v.$principal, v.$secondary);
       border-radius: 10px;
       margin: 5px 0;
     }

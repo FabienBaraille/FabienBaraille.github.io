@@ -4,6 +4,8 @@
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 
+import './GalCard.scss';
+
 const GalCard = ({ datas, setCardNb }) => {
   const cardRef = useRef(null);
 
@@ -16,11 +18,17 @@ const GalCard = ({ datas, setCardNb }) => {
         return <p key={`descr${idD}`}>{descr}</p>;
       })}
       <p>
-        Voici le lien du projet sur Github : <a href={github}>{github}</a>
+        Voici le lien du projet sur Github :{' '}
+        <a className="link" href={github}>
+          {github}
+        </a>
       </p>
       {siteUrl && (
         <p>
-          Retrouvez le projet en ligne : <a href={siteUrl}>{siteUrl}</a>
+          Retrouvez le projet en ligne :{' '}
+          <a className="link" href={siteUrl}>
+            {siteUrl}
+          </a>
         </p>
       )}
       <div className="mini-gallery">

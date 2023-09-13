@@ -1,9 +1,10 @@
 @use '/src/styles/variables' as v;
 
 .head {
-    background:  v.$second;
-    font-family: 'Mochiy Pop One';
-    color: white;
+    background:  v.$secondary;
+    font-family: 'Abhaya Libre';
+    font-weight: 800;
+    color: v.$light-ter;
     height: 90px;
     display: flex;
     flex-direction: column;
@@ -15,6 +16,7 @@
     }
     h2 {
         font-size: v.$subSize;
+        margin: 0 0 20px;
     }
 }
 

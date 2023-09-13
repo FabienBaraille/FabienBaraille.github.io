@@ -9,7 +9,7 @@
   position: relative;
   
   h3{
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Abhaya Libre';
     color: v.$principal;
     text-shadow: 1px 0px 3px v.$principal;
     opacity: 0;
@@ -33,8 +33,8 @@
 }
 .infos{
   position: absolute;
-  fill: #fff;
-  color: #fff;
+  fill: v.$light-ter;
+  color: v.$light-ter;
   height: 60px;
   left: 10px;
   top: 220px;
@@ -47,7 +47,7 @@
 .card {
   height: 300px;
   width: 300px;
-  background: grey;
+  background: v.$tertiary;
   border-radius: 10px;
   transition: background 1s;
   background: v.$principal;
@@ -63,15 +63,13 @@
   background-size: 300px;
 
   &:hover {
-        background: url('../../assets/images/profil.jpg') left center no-repeat;
-        background-size: 450px;
         h3{
             opacity: 1;
-            color: white;
+            color: v.$tertiary;
         }
         .fa{
             opacity: 1;
-            color: white;
+            color: v.$tertiary;
         }
     }
 }

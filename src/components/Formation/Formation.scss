@@ -8,7 +8,7 @@
   section {
     width: 45%;
     h2 {
-      font-family: 'Mochiy Pop One';
+      font-family: 'Abhaya Libre';
       font-size: v.$subSize;
       margin: 15px;
     }
@@ -27,7 +27,7 @@
   display: inline-block;
   label {
     font-size: v.$normalSize;
-    background: #ECF0F1;
+    background: v.$light-ter;
     color: v.$principal;
     border-left: 4px solid v.$principal;
     border-radius: 0 5px 0 0; 
@@ -35,13 +35,13 @@
     z-index: 2;
     &:hover {
       background: v.$principal;
-      color: v.$clear;
+      color: v.$light-ter;
       cursor: pointer;
     }
   }
   ul li {
     display: block;
-    background: white;
+    background: v.$light-ter;
     padding: 15px 15px;
     text-align: justify;
   }
@@ -65,7 +65,7 @@
   }
   input:checked + label{
     background: v.$principal;
-    color: v.$clear;
+    color: v.$light-ter;
   }
   input:checked ~ ul{
     height: auto;

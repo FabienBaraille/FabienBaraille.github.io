@@ -1,0 +1,24 @@
+@use '/src/styles/variables' as v;
+
+.gal-card {
+  padding: 20px;
+  .title {
+    font-size: 2rem;
+    color: v.$principal;
+    font-family: 'Abhaya Libre';
+  }
+  .link{
+    color: v.$tertiary;
+    text-decoration: underline;
+  }
+}
+
+.mini-gallery {
+  border: 2px solid v.$tertiary;
+  border-radius: 25px;
+  img {
+    height: 300Px;
+    width: auto;
+    margin: 0.8rem;
+  }
+}

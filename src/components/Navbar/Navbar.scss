@@ -4,19 +4,19 @@
   width: 150px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, v.$second 0%, v.$principal 100%);
+  background: v.$secondary;
   position: absolute;
   height: 100%;
   z-index: 1;
   .logo {
     height: 90px;
     background: center / contain no-repeat url('/src/assets/images/FB.png'),
-                v.$second;
+                v.$secondary;
   }
   .btn {
     padding: 15px;
-    color: white;
-    font-family: 'Mochiy Pop One';
+    color: v.$light-ter;
+    font-family: 'Abhaya Libre';
     font-size: v.$smallSize;
     border: none;
     background: transparent;
@@ -27,11 +27,11 @@
   }
   .menu-btn {
     &:hover {
-      box-shadow: inset 0 0 12px 5px v.$clear;
+      box-shadow: inset 0 0 12px 5px v.$light-ter;
     }
     &.selected {
       color: v.$principal;
-      box-shadow: inset 0 0 12px 5px v.$clear;
+      box-shadow: inset 0 0 12px 5px v.$light-ter;
     }
   }
 }
@@ -53,11 +53,11 @@
     .menu-btn {
       background: v.$principal;
       &:hover {
-        box-shadow: inset 0 0 12px 5px v.$clear;
+        box-shadow: inset 0 0 12px 5px v.$light-ter;
       }
       &.selected {
-        color: v.$clear;
-        box-shadow: inset 0 0 12px 5px v.$clear;
+        color: v.$light-ter;
+        box-shadow: inset 0 0 12px 5px v.$light-ter;
       }
     }
   }
