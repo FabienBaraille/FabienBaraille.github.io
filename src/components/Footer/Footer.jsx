@@ -17,11 +17,11 @@ const Footer = () => {
       </p>
       <p>
         <Smartphone />
-        <a href="tel:+33663293741">06.63.29.37.41</a>
+        <a target="_blank" rel="noopener" href="tel:+33663293741">06.63.29.37.41</a>
       </p>
       <p>
         <Mail />
-        <a href="mailto:baraille.fabien@gmail.com">baraille.fabien@gmail.com</a>
+        <a target="_blank" rel="noopener" href="mailto:baraille.fabien@gmail.com">baraille.fabien@gmail.com</a>
       </p>
       <p>
         <Linkedin />

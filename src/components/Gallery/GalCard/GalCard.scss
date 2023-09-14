@@ -1,23 +1,42 @@
 @use '/src/styles/variables' as v;
 
 .gal-card {
+  color: v.$light-ter;
   padding: 20px;
-  .title {
-    font-size: 2rem;
-    color: v.$principal;
-  }
-  .link{
-    color: v.$tertiary;
-    text-decoration: underline;
+  .description {
+    background: v.$primary;
+    padding: 10px;
+    margin-bottom: 20px;
+    .title {
+      font-size: 2rem;
+    }
+    .link{
+      color: v.$tertiary;
+      text-decoration: underline;
+    }
+    p {
+      text-align: justify;
+    }
   }
 }
 
 .mini-gallery {
-  border: 2px solid v.$tertiary;
-  border-radius: 25px;
+  border: 2px solid v.$secondary;
+  border-radius: 15px;
   img {
-    height: 300Px;
+    height: 200Px;
     width: auto;
     margin: 0.8rem;
+  }
+}
+
+@media screen and (min-width : 900px) {
+  .gal-card {
+    display: flex;
+    justify-content: space-around;
+    div {
+      height: fit-content;
+      width: 47%;
+    }
   }
 }

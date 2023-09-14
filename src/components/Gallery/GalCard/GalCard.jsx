@@ -13,24 +13,36 @@ const GalCard = ({ datas, setCardNb }) => {
 
   return (
     <div className="gal-card" ref={cardRef} onClick={() => setCardNb('')}>
-      <h3 className="title">{title}</h3>
-      {descriptions.map(({ idD, descr }) => {
-        return <p key={`descr${idD}`}>{descr}</p>;
-      })}
-      <p>
-        Voici le lien du projet sur Github :{' '}
-        <a className="link" href={github}>
-          {github}
-        </a>
-      </p>
-      {siteUrl && (
+      <div className="description">
+        <h3 className="title">{title}</h3>
+        {descriptions.map(({ idD, descr }) => {
+          return <p key={`descr${idD}`}>{descr}</p>;
+        })}
         <p>
-          Retrouvez le projet en ligne :{' '}
-          <a className="link" href={siteUrl}>
-            {siteUrl}
+          Voici le lien du projet sur Github :{' '}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+            href={github}
+          >
+            {github}
           </a>
         </p>
-      )}
+        {siteUrl && (
+          <p>
+            Retrouvez le projet en ligne :{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link"
+              href={siteUrl}
+            >
+              {siteUrl}
+            </a>
+          </p>
+        )}
+      </div>
       <div className="mini-gallery">
         {images.map((image) => {
           return <img key={image} src={image} alt="mini gallery" />;

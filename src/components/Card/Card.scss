@@ -1,8 +1,8 @@
 @use '/src/styles/variables' as v;
 
 .card {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border-radius: 10px;
   box-shadow: 10px 10px 14px 4px rgba(0,0,0,0.6);
   display: flex;
@@ -11,9 +11,9 @@
   position: relative;
   margin: 0 30px;
   background: url('../../assets/images/profil.jpg') center center no-repeat;
-  background-size: 300px;
+  background-size: 200px;
   &:hover {
-        h3{
+        h4{
             opacity: 1;
         }
         .fa{
@@ -22,66 +22,63 @@
     }
 }
 .border {
-  height: 290px;
-  width: 290px;
+  height: 190px;
+  width: 190px;
   background: transparent;
   border-radius: 10px;
   transition: 1s ease;
   position: relative;
   margin: 0 5px;
-  h3{
-    color: v.$principal;
-    text-shadow: 1px 0px 3px v.$light-ter;
+  color: v.$primary;
+  text-shadow: 1px 0px 3px v.$light-ter;
+  h4{
     opacity: 0;
     transition: 1s;
     text-align: left;
     padding: 10px;
-    font-size: v.$subSize;
+    font-size: 1.4rem;
     margin: 0;
   }
   &:hover {
-        border: 1px solid v.$principal;
+        border: 1px solid v.$primary;
         box-shadow: 0 0 15px 5px v.$light-ter;
     }
 }
-.fa{
-  opacity: 0;
-  transition: 1s;
-  text-shadow: 1px 0px 3px v.$light-ter;
-  color: v.$principal;
-  margin: 0;
-  font-size: v.$normalSize;
-}
 .infos{
   position: absolute;
-  fill: v.$light-ter;
-  color: v.$light-ter;
   height: 60px;
   left: 10px;
-  top: 220px;
+  top: 120px;
   width: 150px;
   display: flex;
   flex-direction: column;
   align-items: self-start;
   justify-content: space-around;
+  .fa{
+    opacity: 0;
+    transition: 1s;
+    margin: 0;
+    font-size: 0.9rem;
+  }
 }
 
-@media screen and (max-width : 900px) {
+@media screen and (min-width : 1000px) {
   .card {
-    height: 200px;
-    width: 200px;
-    &:hover {
-      background-size: 300px;
-    }
-  }
-  .card0 {
-    background-size: 200px;
+    height: 250px;
+    width: 250px;
+    background-size: 250px;
   }
   .border {
-    height: 190px;
-    width: 190px;
+    height: 240px;
+    width: 240px;
+    h4 {
+      font-size: v.$subSize;
+    }
   }
   .infos{
-    top: 120px;
+    top: 170px;
+    .fa {
+      font-size: v.$normalSize;
+    }
   }
 }

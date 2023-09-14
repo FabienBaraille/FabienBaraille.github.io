@@ -2,21 +2,80 @@
 
 .formation {
   display: flex;
-  justify-content: space-around;
-  position: absolute;
-  top: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
   section {
-    width: 45%;
-    h2 {
-      font-size: v.$subSize;
-      margin: 15px;
-    }
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  h2 {
+    font-size: v.$subSize;
+    margin: 15px;
   }
 }
 
-.float-right{
-  float: right;
+.forma-blue {
+  background: v.$primary;
+  color: v.$light-ter;
+  label {
+    background: v.$light-prim;
+    border-left: 4px solid v.$light-ter;
+    &:hover {
+      background: v.$light-ter;
+      color: v.$primary;
+    }
+  }
+  li {
+    color: v.$primary;
+    background: v.$light-ter;
+  }
+  input:checked + label{
+    background: v.$primary;
+    color: v.$light-ter;
+  }
 }
+.forma-light {
+  background: v.$tertiary;
+  color: v.$primary;
+  label {
+    background: v.$light-ter;
+    border-left: 4px solid v.$primary;
+    &:hover {
+      background: v.$primary;
+      color: v.$light-ter;
+    }
+  }
+  li {
+    background: v.$primary;
+    color: v.$light-ter;
+  }
+  input:checked + label{
+    background: v.$tertiary;
+  }
+}
+.forma-green {
+  background: v.$secondary;
+  color: v.$light-ter;
+  label {
+    background: v.$light-sec;
+    border-left: 4px solid v.$light-ter;
+    &:hover {
+      background: v.$light-ter;
+      color: v.$secondary;
+    }
+  }
+  li {
+    color: v.$secondary;
+    background: v.$light-ter;
+  }
+  input:checked + label{
+    background: v.$secondary;
+    color: v.$light-ter;
+  }
+}
+
 .iframe{
  font-size: v.$smallSize;
   line-height: 22px;
@@ -26,21 +85,15 @@
   display: inline-block;
   label {
     font-size: v.$normalSize;
-    background: v.$light-ter;
-    color: v.$principal;
-    border-left: 4px solid v.$principal;
     border-radius: 0 5px 0 0; 
     position: relative;
     z-index: 2;
     &:hover {
-      background: v.$principal;
-      color: v.$light-ter;
-      cursor: pointer;
+      cursor: cell;
     }
   }
   ul li {
     display: block;
-    background: v.$light-ter;
     padding: 15px 15px;
     text-align: justify;
   }
@@ -62,10 +115,6 @@
     overflow: hidden;
     margin: 0;
   }
-  input:checked + label{
-    background: v.$principal;
-    color: v.$light-ter;
-  }
   input:checked ~ ul{
     height: auto;
     top: 0;
@@ -74,19 +123,12 @@
 .animate{
   transition: 1s;  
 }
-@media screen and (max-width : 900px) {
-  .formation {
-      flex-direction: column;
-      align-items: center;
-      section {
-        width: 90%;
-      }
-  }
-}
 
-@media screen and (max-width : 700px) {
+
+@media screen and (min-width : 700px) {
   .formation {
-      position: unset;
-      margin: 20px 0;
+    position: absolute;
+    top: 20px;
+    margin: 0;
   }
 }

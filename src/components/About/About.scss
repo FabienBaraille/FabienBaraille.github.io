@@ -4,19 +4,18 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  p, li {
-    font-size: v.$normalSize;
-  }
+  width: 95%;
   h3 {
     font-size: v.$subSize;
     font-weight: 500;
+    margin: 10px 0;
   }
   ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -25,21 +24,27 @@
 }
 
 .first {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.intro, .skills, .list {
+  height: fit-content;
 }
 
 .intro {
   text-align: justify;
-  padding: 15px 25px;
+  padding: 10px 20px;
   background: v.$light-ter;
 }
 
 .skills {
   color: v.$light-ter;
-  background: v.$principal;
-  padding: 25px;
+  background: v.$primary;
+  padding: 10px;
   ul {
     li {
       display: flex;
@@ -47,11 +52,11 @@
       justify-content: end;
       align-items: center;
       padding: 10px;
-      height: 160px;
+      height: 120px;
     }
   }
   img {
-    width: 55px;
+    width: 35px;
     height: auto;
     filter: grayscale(1);
   }
@@ -59,36 +64,45 @@
 .list {
   color: v.$light-ter;
   background: v.$secondary;
-  padding: 25px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  ul {
-    width: 250px;
+  div {
+    width: 45%;
   }
   .right {
     background: v.$light-sec;
     width: 3px;
-    padding: 25px 0;
+    padding: 10px 0;
   }
 }
 .effect {
+  font-size: 0.9rem;
   padding: 7px 10px;
   border-radius: 20px;
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.25);
-  width: 150px;
+  width: 110px;
+  margin: 10px 0 0;
 }
 .green {
   background: v.$light-sec;
   margin: 10px;
 }
 .blue {
-  background: v.$light-princ;
+  background: v.$light-prim;
 }
 
 
-@media screen and (min-width : 900px) {
-  
+@media screen and (min-width : 700px) {
+  .wrapper {
+    position: absolute;
+    top: 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width : 1000px) {
   .wrapper {
     position: absolute;
     top: 20px;
@@ -96,13 +110,32 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .intro {
+    padding: 20px 40px;
+  }
+  .skills {
+    padding: 10px;
+    img {
+      width: 60px;
+    }
+    .effect {
+      width: 130px;
+    }
+  }
+
+  .list {
+    padding: 25px;
+    .right {
+      background: v.$light-sec;
+      width: 3px;
+      padding: 25px 0;
+    }
+  }
+
   .first, .third {
     width: 30%;
   }
   .second, .fourth {
     width: 60%;
-  }
-  .effect {
-    width: unset;
   }
 }

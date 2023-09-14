@@ -4,7 +4,7 @@ import './Formation.scss';
 const Formation = () => {
   return (
     <div className="formation">
-      <section>
+      <section className="forma-blue">
         <h2>Toutes mes formations...</h2>
         <div className="dropdown">
           <input id="toggle4" type="checkbox" />
@@ -61,7 +61,7 @@ const Formation = () => {
           </ul>
         </div>
       </section>
-      <section>
+      <section className="forma-light">
         <h2>Avant la vie active il y a les jobs d'été...</h2>
         <div className="dropdown">
           <input id="toggle6" type="checkbox" />
@@ -90,6 +90,8 @@ const Formation = () => {
             </li>
           </ul>
         </div>
+      </section>
+      <section className="forma-green">
         <h2 className="experience">...l'entrée dans la vie active.</h2>
         <div className="dropdown">
           <input id="toggle10" type="checkbox" />

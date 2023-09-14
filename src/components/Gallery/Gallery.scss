@@ -1,8 +1,7 @@
 @use '/src/styles/variables' as v;
 
 .gal-wrapper {
-  position: absolute;
-  top: 20px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +17,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid v.$principal;
+  border: 2px solid v.$primary;
+  border-radius: 10px;
 }
 
 .preview-card img {
@@ -35,7 +35,7 @@
   width: 20px;
   height: 80%;
   background: v.$light-ter;
-  color: v.$principal;
+  color: v.$primary;
   transition: all 0.9s ease;
   p {
     transition: all 0.9s ease;
@@ -55,9 +55,10 @@
   }
 }
 
-@media screen and (max-width : 700px) {
+@media screen and (min-width : 700px) {
   .gal-wrapper {
-      position: unset;
-      margin: 20px 0;
+    position: absolute;
+    top: 20px;
+    margin: 0;
   }
 }
