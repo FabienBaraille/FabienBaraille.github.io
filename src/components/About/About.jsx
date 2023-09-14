@@ -37,31 +37,31 @@ const About = () => {
         <h3>Skills :</h3>
         <ul>
           <li>
-            <img src="../../assets/images/logos/html.png" alt="html logo" />
+            <img src="/assets/images/logos/html.png" alt="html logo" />
             <p className="effect blue">HTML5/CSS3</p>
           </li>
           <li>
-            <img src="../../assets/images/logos/js.png" alt="js logo" />
+            <img src="/assets/images/logos/js.png" alt="js logo" />
             <p className="effect blue">JavaScript</p>
           </li>
           <li>
-            <img src="../../assets/images/logos/react.png" alt="react logo" />
+            <img src="/assets/images/logos/react.png" alt="react logo" />
             <p className="effect blue">React.js</p>
           </li>
           <li>
-            <img src="../../assets/images/logos/redux.png" alt="redux logo" />
+            <img src="/assets/images/logos/redux.png" alt="redux logo" />
             <p className="effect blue">Redux</p>
           </li>
           <li>
             <img
-              src="../../assets/images/logos/wordpress.png"
+              src="/assets/images/logos/wordpress.png"
               alt="wordpress logo"
             />
             <p className="effect blue">WordPress</p>
           </li>
           <li>
             <img
-              src="../../assets/images/logos/bootstrap.png"
+              src="/assets/images/logos/bootstrap.png"
               alt="bootstrap logo"
             />
             <p className="effect blue">Bootstrap</p>
