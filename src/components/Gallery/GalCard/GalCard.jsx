@@ -9,7 +9,7 @@ import './GalCard.scss';
 const GalCard = ({ datas, setCardNb }) => {
   const cardRef = useRef(null);
 
-  const { title, descriptions, github, images, siteUrl = null } = datas;
+  const { title, descriptions, github, images, siteUrl = null, techno } = datas;
 
   return (
     <div className="gal-card" ref={cardRef} onClick={() => setCardNb('')}>
@@ -42,6 +42,15 @@ const GalCard = ({ datas, setCardNb }) => {
             </a>
           </p>
         )}
+        <div className="techno">
+          {techno.map((lang) => {
+            return (
+              <p className="effect blue" key={lang}>
+                {lang}
+              </p>
+            );
+          })}
+        </div>
       </div>
       <div className="mini-gallery">
         {images.map((image) => {
@@ -59,6 +68,7 @@ GalCard.propTypes = {
     github: PropTypes.string,
     images: PropTypes.array,
     siteUrl: PropTypes.string,
+    techno: PropTypes.array,
   }).isRequired,
   setCardNb: PropTypes.func.isRequired,
 };

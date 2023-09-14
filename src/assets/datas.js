@@ -17,6 +17,7 @@ export default [
       '/src/assets/images/motus/motus3.png',
       '/src/assets/images/motus/motus4.png',
     ],
+    techno: ['HTML', 'CSS', 'JavaScript', 'PHP'],
   },
   {
     id: 1,
@@ -36,6 +37,7 @@ export default [
       '/src/assets/images/labyrinth/laby-3.png',
     ],
     siteUrl: 'https://labyfab.surge.sh/',
+    techno: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
@@ -59,5 +61,6 @@ export default [
       '/src/assets/images/pokedex/poke2.png',
       '/src/assets/images/pokedex/poke3.png',
     ],
+    techno: ['HTML', 'CSS', 'JavaScript', 'PHP'],
   },
 ];
