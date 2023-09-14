@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0;
   section {
     width: 95%;
     margin: 10px 0;
@@ -18,7 +17,7 @@
 
 .forma-blue {
   background: v.$primary;
-  color: v.$light-ter;
+  color: v.$font-color;
   label {
     background: v.$light-prim;
     border-left: 4px solid v.$light-ter;
@@ -33,7 +32,7 @@
   }
   input:checked + label{
     background: v.$primary;
-    color: v.$light-ter;
+    color: v.$font-color;
   }
 }
 .forma-light {
@@ -44,12 +43,12 @@
     border-left: 4px solid v.$primary;
     &:hover {
       background: v.$primary;
-      color: v.$light-ter;
+      color: v.$font-color;
     }
   }
   li {
     background: v.$primary;
-    color: v.$light-ter;
+    color: v.$font-color;
   }
   input:checked + label{
     background: v.$tertiary;
@@ -57,7 +56,7 @@
 }
 .forma-green {
   background: v.$secondary;
-  color: v.$light-ter;
+  color: v.$font-color;
   label {
     background: v.$light-sec;
     border-left: 4px solid v.$light-ter;
@@ -72,7 +71,7 @@
   }
   input:checked + label{
     background: v.$secondary;
-    color: v.$light-ter;
+    color: v.$font-color;
   }
 }
 
@@ -111,7 +110,7 @@
     position: relative;
     top: -20px;
     z-index: 1;
-    height: 0.5px;
+    height: 1px;
     overflow: hidden;
     margin: 0;
   }
@@ -121,14 +120,18 @@
   }
 }
 .animate{
-  transition: 1s;  
+  transition: top 1s ease;  
 }
 
 
 @media screen and (min-width : 700px) {
   .formation {
-    position: absolute;
-    top: 20px;
-    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .forma-blue, .forma-light {
+      width: 45%;
+    }
   }
+  
 }

@@ -1,9 +1,8 @@
 @use '/src/styles/variables' as v;
 
 .gal-wrapper {
-  margin: 20px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
@@ -52,13 +51,5 @@
   p {
     transform: scale(1);
     transition: all 0.9s ease;
-  }
-}
-
-@media screen and (min-width : 700px) {
-  .gal-wrapper {
-    position: absolute;
-    top: 20px;
-    margin: 0;
   }
 }

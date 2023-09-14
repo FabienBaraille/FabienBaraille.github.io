@@ -1,7 +1,7 @@
 @use '/src/styles/variables' as v;
 
 .gal-card {
-  color: v.$light-ter;
+  color: v.$font-color;
   padding: 20px;
   .description {
     background: v.$primary;

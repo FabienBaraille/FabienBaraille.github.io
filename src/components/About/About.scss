@@ -1,10 +1,9 @@
 @use '/src/styles/variables' as v;
 
 .wrapper {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 90%;
   h3 {
     font-size: v.$subSize;
     font-weight: 500;
@@ -33,6 +32,7 @@
 
 .intro, .skills, .list {
   height: fit-content;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.35);
 }
 
 .intro {
@@ -42,7 +42,7 @@
 }
 
 .skills {
-  color: v.$light-ter;
+  color: v.$font-color;
   background: v.$primary;
   padding: 10px;
   ul {
@@ -52,7 +52,7 @@
       justify-content: end;
       align-items: center;
       padding: 10px;
-      height: 120px;
+      height: 100px;
     }
   }
   img {
@@ -62,7 +62,7 @@
   }
 }
 .list {
-  color: v.$light-ter;
+  color: v.$font-color;
   background: v.$secondary;
   padding: 10px;
   display: flex;
@@ -82,7 +82,7 @@
   padding: 7px 10px;
   border-radius: 20px;
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.25);
-  width: 110px;
+  width: 115px;
   margin: 10px 0 0;
 }
 .green {
@@ -93,49 +93,54 @@
   background: v.$light-prim;
 }
 
-
-@media screen and (min-width : 700px) {
-  .wrapper {
-    position: absolute;
-    top: 20px;
-    margin: 0;
-  }
-}
-
 @media screen and (min-width : 1000px) {
   .wrapper {
-    position: absolute;
-    top: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 30px;
+    div {
+      margin: 0;
+    }
   }
   .intro {
     padding: 20px 40px;
   }
   .skills {
     padding: 10px;
+    max-width: 380px;
     img {
-      width: 60px;
+      width: 50px;
     }
     .effect {
-      width: 130px;
+      width: 100px;
     }
   }
 
   .list {
-    padding: 25px;
     .right {
       background: v.$light-sec;
       width: 3px;
       padding: 25px 0;
     }
   }
-
-  .first, .third {
-    width: 30%;
+  .first {
+    grid-column: 1;
+    grid-row: 1;
   }
-  .second, .fourth {
-    width: 60%;
+  .second {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+  .third {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    justify-self: center;
+  }
+  .fourth {
+    grid-column: 2 / 4;
+    grid-row: 3;
   }
 }
