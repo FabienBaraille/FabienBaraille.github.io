@@ -63,4 +63,28 @@ export default [
     ],
     techno: ['HTML', 'CSS', 'JavaScript', 'PHP'],
   },
+  {
+    id: 3,
+    title: 'DMFC-Game',
+    descriptions: [
+      {
+        idD: 0,
+        descr:
+          "Le projet vient d’une commande client. Celui-ci réalise des pronostics sur les saisons de NBA avec des amis depuis plusieurs années où un maître du jeu, le DMFC, choisi les matchs sur lesquels pronostiquer.Le but principal du projet est de transposer l’organisation actuelle sous forme d’application afin d’alléger la tâche du DMFC, apporter de la convivialité et de l’autonomie aux joueurs.",
+      },
+      {
+        idD: 1,
+        descr:
+          "Ce projet a été réalisé en tant que projet de fin de formation, nous étions une équipe de 6 personnes, 3 pour le Back-End et 3 pour le Front-End. L’application se devait de reprendre les fonctionnalités actuelles c’est-à-dire un maître du jeu qui organise et des joueurs qui pronostiquent, les interfaces diffèrent donc suivant le rôle que l’on a.",
+      },
+    ],
+    siteUrl: 'https://dmfc-game.fr/',
+    cover: '/assets/images/dmfc/cover.png',
+    images: [
+      '/assets/images/dmfc/dmfc-1.png',
+      '/assets/images/dmfc/dmfc-2.png',
+      '/assets/images/dmfc/dmfc-3.png',
+    ],
+    techno: ['React.js', 'Symfony', 'MySQL'],
+  },
 ];

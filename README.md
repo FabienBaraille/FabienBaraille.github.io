@@ -8,10 +8,6 @@ Je n'ai donc pas utilisé de bibliothèque supplémentaire (hors l'ajout de bibl
 Je n'ai également pas utilisé le router proposé par React car il ne fait pas bon ménage avec l'hébergement GitHub.
 J'ai encore des choses à faire dessus ainsi que des améliorations / tests à réaliser afin de continuer mes "expérimentations".
 
-## Reste à faire
-
-- Page projet (cover à faire et pokedex à mettre su github)
-
 ## A essayer
 
 - Une génération de couleur (thème) aléatoire
